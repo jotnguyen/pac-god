@@ -1,0 +1,2 @@
+Arcade - Pac-Man - General Sprites.png		https://www.spriters-resource.com/arcade/pacman/sheet/52631/
+pacman.png					https://noobtuts.com/unity/2d-pacman-game
