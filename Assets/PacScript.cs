@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditorInternal;
+//using UnityEditorInternal;
 using UnityEngine;
 
 public class PacScript : MonoBehaviour
@@ -31,34 +31,35 @@ public class PacScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    private void FixedUpdate()
+    {
         float horiz = Input.GetAxisRaw("Horizontal");
         float vert = Input.GetAxisRaw("Vertical");
         //Vector2 newPos = rb.position;
         if (horiz > 0 && valid(new Vector2(1f, 0f)))
         {
             moveDir = new Vector2(1f, 0f);
-            //newPos.x += speed;
             anim.SetFloat("DirX", horiz);
             anim.SetFloat("DirY", 0f);
         }
         else if (horiz < 0 && valid(new Vector2(-1f, 0f)))
         {
             moveDir = new Vector2(-1f, 0f);
-            //newPos.x -= speed;
             anim.SetFloat("DirX", horiz);
             anim.SetFloat("DirY", 0f);
         }
         else if (vert > 0 && valid(new Vector2(0f, 1f)))
         {
             moveDir = new Vector2(0f, 1f);
-            //newPos.y += speed;
             anim.SetFloat("DirY", vert);
             anim.SetFloat("DirX", 0f);
         }
         else if (vert < 0 && valid(new Vector2(0f, -1f)))
         {
             moveDir = new Vector2(0f, -1f);
-            //newPos.y -= speed;
             anim.SetFloat("DirY", vert);
             anim.SetFloat("DirX", 0f);
         }
@@ -71,10 +72,10 @@ public class PacScript : MonoBehaviour
     }
 
 
-
     bool valid(Vector2 dir)
     {
-        RaycastHit2D[] rh = Physics2D.BoxCastAll(rb.position, new Vector2(0.4f, 0.4f), 0f, dir, speed);
+        //RaycastHit2D[] rh = Physics2D.BoxCastAll(rb.position, new Vector2(0.4f, 0.4f), 0f, dir, speed);
+        RaycastHit2D[] rh = Physics2D.BoxCastAll(rb.position, worldSize, 0f, dir, speed);
 
         return rh.Length == 1 &&
                rh[0].collider == GetComponent<Collider2D>();
