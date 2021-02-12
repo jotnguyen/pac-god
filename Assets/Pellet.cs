@@ -6,7 +6,7 @@ public class Pellet : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if(coll.tag == "Player")
+        if(coll.gameObject.tag == "Player")
         {
             Destroy(gameObject);
         }
