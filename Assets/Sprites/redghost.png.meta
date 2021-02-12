@@ -1,16 +1,7 @@
 fileFormatVersion: 2
-guid: 94231765ec1e4d14d8a99a080d052a4b
+guid: 516b05a572b66394b99322e7a397813e
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -3186575185625007550
-    second: Arcade - Pac-Man - General Sprites_0
-  - first:
-      213: 920017232686747848
-    second: Arcade - Pac-Man - General Sprites_1
-  - first:
-      213: -5654489810553180926
-    second: Arcade - Pac-Man - General Sprites_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -49,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -80,42 +71,9 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Arcade - Pac-Man - General Sprites_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 680
-        height: 248
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20d69efd9773781b0800000000000000
-      internalID: -5654489810553180926
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
