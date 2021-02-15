@@ -15,7 +15,7 @@ public class MoveGhost : MonoBehaviour
         //transform.position != waypoints[cur].position
         if (Vector2.Distance(transform.position, waypoints[cur].position) > 0.1f)
         {
-            Debug.Log(cur + "if");
+            //Debug.Log(cur + "if");
             Vector2 p = Vector2.MoveTowards(transform.position,
                                             waypoints[cur].position,
                                             speed);
@@ -26,7 +26,7 @@ public class MoveGhost : MonoBehaviour
         {
             //cur = cur + 1;
             cur = (cur + 1) % waypoints.Length;
-            Debug.Log(cur);
+            //Debug.Log(cur);
         }
     }
 
