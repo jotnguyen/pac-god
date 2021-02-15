@@ -25,6 +25,12 @@ public class NextLevel : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        foreach (var GObject in GameObject.FindGameObjectsWithTag("Ghost"))
+        {
+            GObject.GetComponent<MoveGhost>().cur = 0;
+        }
+
+        ;
         SceneManager.LoadScene("Level1");
     }
 }

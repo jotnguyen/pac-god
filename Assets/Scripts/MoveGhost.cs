@@ -6,7 +6,7 @@ public class MoveGhost : MonoBehaviour
 {
     public Transform[] waypoints;
 
-    public static int cur = 0;
+    public int cur = 0;
 
     public float speed = 0.02f;
     void FixedUpdate()
