@@ -24,6 +24,7 @@ public class MoveGhost : MonoBehaviour
         // Select next waypoint after reaching first waypoint
         else
         {
+            GetComponent<Rigidbody2D>().MovePosition(waypoints[cur].position);
             //cur = cur + 1;
             cur = (cur + 1) % waypoints.Length;
             //Debug.Log(cur);

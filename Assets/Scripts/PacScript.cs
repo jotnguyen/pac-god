@@ -77,8 +77,7 @@ public class PacScript : MonoBehaviour
         //RaycastHit2D[] rh = Physics2D.BoxCastAll(rb.position, new Vector2(0.4f, 0.4f), 0f, dir, speed);
         RaycastHit2D[] rh = Physics2D.BoxCastAll(rb.position, worldSize, 0f, dir, speed);
 
-        return rh.Length == 1 &&
-               rh[0].collider == GetComponent<Collider2D>();
+        return (rh.Length == 1 && rh[0].collider == GetComponent<Collider2D>()) || (rh[1].collider.transform.tag == "Ghost");
     }
 
     /*void OnCollisionEnter2D(Collision2D other)

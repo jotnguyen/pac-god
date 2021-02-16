@@ -544,7 +544,7 @@ Transform:
   m_GameObject: {fileID: 253618066}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.16, y: -3.6, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.29, y: 0.29, z: 1}
   m_Children: []
   m_Father: {fileID: 1707216154}
   m_RootOrder: 3
@@ -934,7 +934,7 @@ Transform:
   m_GameObject: {fileID: 494886168}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.3000002, y: -1.1999998, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.29, y: 0.29, z: 1}
   m_Children: []
   m_Father: {fileID: 1707216154}
   m_RootOrder: 2
@@ -1087,7 +1087,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1874,7 +1874,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.2, y: 0.2}
   m_EdgeRadius: 0
 --- !u!212 &874692478
 SpriteRenderer:
@@ -2731,7 +2731,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.2, y: 0.2}
   m_EdgeRadius: 0
 --- !u!212 &1272489010
 SpriteRenderer:
@@ -3347,7 +3347,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.2, y: 0.2}
   m_EdgeRadius: 0
 --- !u!212 &1699667976
 SpriteRenderer:
@@ -3916,7 +3916,7 @@ Transform:
   m_GameObject: {fileID: 2093207166}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3, y: -2.1799998, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.29, y: 0.29, z: 1}
   m_Children: []
   m_Father: {fileID: 1707216154}
   m_RootOrder: 1
@@ -4340,6 +4340,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899471081626233871, guid: 4acf717ebc832b9429fe3087500a04df,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899471081626233871, guid: 4acf717ebc832b9429fe3087500a04df,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.29
       objectReference: {fileID: 0}
     - target: {fileID: 4899471081626233871, guid: 4acf717ebc832b9429fe3087500a04df,
         type: 3}
