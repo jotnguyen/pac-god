@@ -31,6 +31,7 @@ public class NextLevel : MonoBehaviour
         }
 
         ;
+
         SceneManager.LoadScene("Level1");
     }
 }
