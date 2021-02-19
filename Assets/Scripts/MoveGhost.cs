@@ -8,6 +8,11 @@ public class MoveGhost : MonoBehaviour
 
     public int cur = 0;
 
+    public bool edible = false;
+
+    public Sprite EdibleSprite;
+    public Sprite EnemySprite;
+
     public float speed = 0.02f;
     void FixedUpdate()
     {
@@ -34,6 +39,33 @@ public class MoveGhost : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.tag == "Player")
-            Destroy(collider.gameObject);
+        {
+            if (!edible) Destroy(collider.gameObject);
+            else
+            {
+                GameObject score_board = GameObject.FindWithTag("Score");
+                score_board.GetComponent<ScoreManager>().Increase_score(10);
+                Destroy(gameObject);
+            }
+        }
+    }
+
+    public void TurnInedible()
+    {
+        if (edible)
+        {
+            edible = false;
+            GetComponent<SpriteRenderer>().sprite = EnemySprite;
+        }
+    }
+
+    public void TurnEdible()
+    {
+        if (!edible)
+        {
+            edible = true;
+            GetComponent<SpriteRenderer>().sprite = EdibleSprite;
+            Invoke("TurnInedible", 5);
+        }
     }
 }
