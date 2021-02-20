@@ -550,6 +550,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet
       objectReference: {fileID: 0}
+    - target: {fileID: 4899471081626233870, guid: 4acf717ebc832b9429fe3087500a04df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pellet
+      objectReference: {fileID: 0}
     - target: {fileID: 4899471081626233871, guid: 4acf717ebc832b9429fe3087500a04df,
         type: 3}
       propertyPath: m_RootOrder
@@ -2443,6 +2448,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4899471081626233870, guid: 4acf717ebc832b9429fe3087500a04df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pellet
+      objectReference: {fileID: 0}
     - target: {fileID: 4899471081626233871, guid: 4acf717ebc832b9429fe3087500a04df,
         type: 3}
       propertyPath: m_RootOrder
@@ -2531,6 +2541,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pellet (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899471081626233870, guid: 4acf717ebc832b9429fe3087500a04df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pellet
       objectReference: {fileID: 0}
     - target: {fileID: 4899471081626233871, guid: 4acf717ebc832b9429fe3087500a04df,
         type: 3}
@@ -2621,6 +2636,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4899471081626233870, guid: 4acf717ebc832b9429fe3087500a04df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pellet
+      objectReference: {fileID: 0}
     - target: {fileID: 4899471081626233871, guid: 4acf717ebc832b9429fe3087500a04df,
         type: 3}
       propertyPath: m_RootOrder
@@ -2709,6 +2729,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pellet (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899471081626233870, guid: 4acf717ebc832b9429fe3087500a04df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pellet
       objectReference: {fileID: 0}
     - target: {fileID: 4899471081626233871, guid: 4acf717ebc832b9429fe3087500a04df,
         type: 3}
@@ -2930,6 +2955,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4899471081626233870, guid: 4acf717ebc832b9429fe3087500a04df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pellet
+      objectReference: {fileID: 0}
     - target: {fileID: 4899471081626233871, guid: 4acf717ebc832b9429fe3087500a04df,
         type: 3}
       propertyPath: m_RootOrder
@@ -3018,6 +3048,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pellet (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899471081626233870, guid: 4acf717ebc832b9429fe3087500a04df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pellet
       objectReference: {fileID: 0}
     - target: {fileID: 4899471081626233871, guid: 4acf717ebc832b9429fe3087500a04df,
         type: 3}
@@ -3375,6 +3410,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pellet (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899471081626233870, guid: 4acf717ebc832b9429fe3087500a04df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pellet
       objectReference: {fileID: 0}
     - target: {fileID: 4899471081626233871, guid: 4acf717ebc832b9429fe3087500a04df,
         type: 3}
@@ -5517,6 +5557,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4899471081626233870, guid: 4acf717ebc832b9429fe3087500a04df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pellet
+      objectReference: {fileID: 0}
     - target: {fileID: 4899471081626233871, guid: 4acf717ebc832b9429fe3087500a04df,
         type: 3}
       propertyPath: m_RootOrder
@@ -5605,6 +5650,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pellet (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899471081626233870, guid: 4acf717ebc832b9429fe3087500a04df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pellet
       objectReference: {fileID: 0}
     - target: {fileID: 4899471081626233871, guid: 4acf717ebc832b9429fe3087500a04df,
         type: 3}
@@ -6264,6 +6314,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4899471081626233870, guid: 4acf717ebc832b9429fe3087500a04df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pellet
+      objectReference: {fileID: 0}
     - target: {fileID: 4899471081626233871, guid: 4acf717ebc832b9429fe3087500a04df,
         type: 3}
       propertyPath: m_RootOrder
@@ -6352,6 +6407,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pellet (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899471081626233870, guid: 4acf717ebc832b9429fe3087500a04df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pellet
       objectReference: {fileID: 0}
     - target: {fileID: 4899471081626233871, guid: 4acf717ebc832b9429fe3087500a04df,
         type: 3}
@@ -7342,6 +7402,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4899471081626233870, guid: 4acf717ebc832b9429fe3087500a04df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pellet
+      objectReference: {fileID: 0}
     - target: {fileID: 4899471081626233871, guid: 4acf717ebc832b9429fe3087500a04df,
         type: 3}
       propertyPath: m_RootOrder
@@ -7436,6 +7501,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pellet (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899471081626233870, guid: 4acf717ebc832b9429fe3087500a04df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pellet
       objectReference: {fileID: 0}
     - target: {fileID: 4899471081626233871, guid: 4acf717ebc832b9429fe3087500a04df,
         type: 3}
@@ -8569,6 +8639,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pellet (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4899471081626233870, guid: 4acf717ebc832b9429fe3087500a04df,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pellet
+      objectReference: {fileID: 0}
     - target: {fileID: 4899471081626233871, guid: 4acf717ebc832b9429fe3087500a04df,
         type: 3}
       propertyPath: m_RootOrder
@@ -9057,6 +9132,28 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914363445567409000, guid: 8c1b8e0344abfc44f918b49efd7c2bfa,
+        type: 3}
+      propertyPath: portal
+      value: 
+      objectReference: {fileID: 9043176726717870937, guid: 61a57c3edf07bc44ea4c957421351a00,
+        type: 3}
+    - target: {fileID: 1914363445567409000, guid: 8c1b8e0344abfc44f918b49efd7c2bfa,
+        type: 3}
+      propertyPath: BombPrefab
+      value: 
+      objectReference: {fileID: 7858662132426900201, guid: b20aeb2fe0d314645afc59e8696aa2e6,
+        type: 3}
+    - target: {fileID: 1914363445567409000, guid: 8c1b8e0344abfc44f918b49efd7c2bfa,
+        type: 3}
+      propertyPath: portal_pos.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914363445567409000, guid: 8c1b8e0344abfc44f918b49efd7c2bfa,
+        type: 3}
+      propertyPath: portal_pos.y
+      value: 3.25
       objectReference: {fileID: 0}
     - target: {fileID: 1914363445567409001, guid: 8c1b8e0344abfc44f918b49efd7c2bfa,
         type: 3}

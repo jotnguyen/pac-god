@@ -19,6 +19,12 @@ public class PacScript : MonoBehaviour
 
     public GameObject BombPrefab;
 
+    public int num_pellets;
+    public bool portalIsCreated;
+    public GameObject portal;
+    public Vector3 portal_pos;
+    public int start_npc;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +34,12 @@ public class PacScript : MonoBehaviour
         speed = 0.05f;
         worldSize = transform.lossyScale * 2f;
         Screen.SetResolution(1280, 720, false);
+        
+        num_pellets = GetNumPellets();
+        portalIsCreated = false;
+        GameObject pm = GameObject.FindWithTag("Player");
+        GameObject score_board = GameObject.FindWithTag("Score");
+        start_npc = score_board.GetComponent<ScoreManager>().num_pellets_collected;
     }
 
     // Update is called once per frame
@@ -37,6 +49,7 @@ public class PacScript : MonoBehaviour
         {
             Instantiate(BombPrefab, transform.position, Quaternion.identity);
         }
+        CollectedAll();
     }
 
     private void FixedUpdate()
@@ -85,6 +98,27 @@ public class PacScript : MonoBehaviour
         RaycastHit2D[] rh = Physics2D.BoxCastAll(rb.position, worldSize, 0f, dir, speed);
 
         return (rh.Length == 1 && rh[0].collider == GetComponent<Collider2D>()) || (rh[1].collider.transform.tag == "Ghost");
+    }
+
+    public int GetNumPellets()
+    {
+        foreach (var g in GameObject.FindGameObjectsWithTag("Pellet"))
+        {
+            num_pellets += 1;
+        }
+
+        return num_pellets;
+    }
+    
+    public void CollectedAll()
+    {
+        GameObject score_board = GameObject.FindWithTag("Score");
+        int num_pc = score_board.GetComponent<ScoreManager>().num_pellets_collected;
+        if (num_pc >= start_npc + num_pellets && !portalIsCreated)
+        {
+            Instantiate(portal, portal_pos, Quaternion.identity);
+            portalIsCreated = true;
+        }
     }
 
     /*void OnCollisionEnter2D(Collision2D other)

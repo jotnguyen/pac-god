@@ -31,8 +31,9 @@ public class NextLevel : MonoBehaviour
             if (moveGhost) moveGhost.cur = 0;
         }
 
-        ;
-
-        SceneManager.LoadScene("Level1");
+        if (col.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene("Level1");
+        }
     }
 }
