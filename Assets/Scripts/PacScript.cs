@@ -17,6 +17,8 @@ public class PacScript : MonoBehaviour
 
     public float speed;
 
+    public GameObject BombPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,11 +33,16 @@ public class PacScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Instantiate(BombPrefab, transform.position, Quaternion.identity);
+        }
     }
 
     private void FixedUpdate()
     {
+
+
         float horiz = Input.GetAxisRaw("Horizontal");
         float vert = Input.GetAxisRaw("Vertical");
         //Vector2 newPos = rb.position;
