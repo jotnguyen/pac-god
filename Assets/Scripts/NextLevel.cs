@@ -33,7 +33,7 @@ public class NextLevel : MonoBehaviour
 
         if (col.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("Level1");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
