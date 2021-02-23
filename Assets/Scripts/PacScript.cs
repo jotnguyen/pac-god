@@ -37,7 +37,7 @@ public class PacScript : MonoBehaviour
         
         num_pellets = GetNumPellets();
         portalIsCreated = false;
-        GameObject pm = GameObject.FindWithTag("Player");
+        //GameObject pm = GameObject.FindWithTag("Player");
         GameObject score_board = GameObject.FindWithTag("Score");
         start_npc = score_board.GetComponent<ScoreManager>().num_pellets_collected;
     }

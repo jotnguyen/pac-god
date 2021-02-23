@@ -13,7 +13,9 @@ public class MoveGhost : MonoBehaviour
     public Sprite EdibleSprite;
     public Sprite EnemySprite;
 
-    public float speed = 0.02f;
+    public float speed = 0.06f;
+    public float edibleSpeed = 0.04f;
+    public float enemySpeed = 0.06f;
     void FixedUpdate()
     {
         // Move closer to waypoint until touching waypoint
@@ -40,7 +42,11 @@ public class MoveGhost : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
-            if (!edible) Destroy(collider.gameObject);
+            if (!edible)
+            {
+                Destroy(FindObjectOfType<TimeController>());
+                Destroy(collider.gameObject);
+            }
             else
             {
                 GameObject score_board = GameObject.FindWithTag("Score");
@@ -56,6 +62,7 @@ public class MoveGhost : MonoBehaviour
         {
             edible = false;
             GetComponent<SpriteRenderer>().sprite = EnemySprite;
+            speed = enemySpeed;
         }
     }
 
@@ -66,6 +73,7 @@ public class MoveGhost : MonoBehaviour
             edible = true;
             GetComponent<SpriteRenderer>().sprite = EdibleSprite;
             Invoke("TurnInedible", 5);
+            speed = edibleSpeed;
         }
     }
 }

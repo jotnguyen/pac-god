@@ -7,6 +7,8 @@ public class NextLevel : MonoBehaviour
 {
     public Rigidbody rb;
 
+    public int maxSceneIndex = 1;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -33,7 +35,16 @@ public class NextLevel : MonoBehaviour
 
         if (col.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            if (SceneManager.GetActiveScene().buildIndex < maxSceneIndex)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+            else
+            {
+                GameObject score_board = GameObject.FindWithTag("Score");
+                score_board.GetComponent<ScoreManager>().SetTextAfter("\nThat's all the levels we have so far, so I guess you win!");
+                Destroy(this.gameObject);
+            }
         }
     }
 }

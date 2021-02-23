@@ -4,19 +4,24 @@ using UnityEngine;
 
 public class TrackPlayerMove : MonoBehaviour
 {
-    private Transform Player;
+    //private Transform Player;
     int MoveSpeed = 2;
     public bool edible = false;
+
+    //public bool gameOver = false;
     // Start is called before the first frame update
     void Start()
     {
-        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+
     }
 
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, Player.position, MoveSpeed * Time.deltaTime);
-
+        //if (!gameOver)
+        //{
+            Transform Player = GameObject.FindWithTag("Player").transform;
+            transform.position = Vector2.MoveTowards(transform.position, Player.position, MoveSpeed * Time.deltaTime);
+        //}
     }
     void OnTriggerEnter2D(Collider2D collider)
     {
@@ -31,4 +36,9 @@ public class TrackPlayerMove : MonoBehaviour
             }
         }
     }
+
+    /*public void GameOver()
+    {
+        gameOver = true;
+    }*/
 }

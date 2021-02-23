@@ -137,6 +137,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   cur: 0
+  edible: 0
   EdibleSprite: {fileID: 21300000, guid: 763eb59909093ad49a1c318d7c1a47f1, type: 3}
   EnemySprite: {fileID: 21300000, guid: 516b05a572b66394b99322e7a397813e, type: 3}
   speed: 0.05
@@ -155,7 +156,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.0000010728836}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.07
 --- !u!50 &2326217334417629341
 Rigidbody2D:
   serializedVersion: 4
