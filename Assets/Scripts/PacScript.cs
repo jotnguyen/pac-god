@@ -39,7 +39,10 @@ public class PacScript : MonoBehaviour
         portalIsCreated = false;
         //GameObject pm = GameObject.FindWithTag("Player");
         GameObject score_board = GameObject.FindWithTag("Score");
-        start_npc = score_board.GetComponent<ScoreManager>().num_pellets_collected;
+        if (score_board)
+        {
+            start_npc = score_board.GetComponent<ScoreManager>().num_pellets_collected;
+        }
     }
 
     // Update is called once per frame
@@ -113,11 +116,14 @@ public class PacScript : MonoBehaviour
     public void CollectedAll()
     {
         GameObject score_board = GameObject.FindWithTag("Score");
-        int num_pc = score_board.GetComponent<ScoreManager>().num_pellets_collected;
-        if (num_pc >= start_npc + num_pellets && !portalIsCreated)
+        if (score_board)
         {
-            Instantiate(portal, portal_pos, Quaternion.identity);
-            portalIsCreated = true;
+            int num_pc = score_board.GetComponent<ScoreManager>().num_pellets_collected;
+            if (num_pc >= start_npc + num_pellets && !portalIsCreated)
+            {
+                Instantiate(portal, portal_pos, Quaternion.identity);
+                portalIsCreated = true;
+            }
         }
     }
 

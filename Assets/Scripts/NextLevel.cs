@@ -7,11 +7,11 @@ public class NextLevel : MonoBehaviour
 {
     public Rigidbody rb;
 
-    public int maxSceneIndex = 1;
-
+    public int maxSceneIndex;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        maxSceneIndex = SceneManager.sceneCountInBuildSettings - 1;
     }
 
     // Update is called once per frame

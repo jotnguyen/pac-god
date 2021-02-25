@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
+  maxSceneIndex: 0
 --- !u!50 &9043176726717870933
 Rigidbody2D:
   serializedVersion: 4

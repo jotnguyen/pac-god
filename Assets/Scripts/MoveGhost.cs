@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MoveGhost : MonoBehaviour
 {
@@ -46,6 +47,7 @@ public class MoveGhost : MonoBehaviour
             {
                 Destroy(FindObjectOfType<TimeController>());
                 Destroy(collider.gameObject);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
             else
             {
