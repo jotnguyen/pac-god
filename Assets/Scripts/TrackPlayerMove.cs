@@ -5,7 +5,7 @@ using UnityEngine;
 public class TrackPlayerMove : MonoBehaviour
 {
     //private Transform Player;
-    int MoveSpeed = 2;
+    float MoveSpeed = 0.55f;
     public bool edible = false;
 
     //public bool gameOver = false;
@@ -22,6 +22,13 @@ public class TrackPlayerMove : MonoBehaviour
             Transform Player = GameObject.FindWithTag("Player").transform;
             transform.position = Vector2.MoveTowards(transform.position, Player.position, MoveSpeed * Time.deltaTime);
         //}
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Wall")
+        {
+            Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        }
     }
     void OnTriggerEnter2D(Collider2D collider)
     {
