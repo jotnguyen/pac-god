@@ -9,7 +9,11 @@ public class ScoreManager : MonoBehaviour
 
     public int num_pellets_collected = 0;
 
-    public string textBefore = "Score: ";
+    public int bombs = 3;
+
+    public string textScore = "Score: ";
+
+    public string textBombs = "Bombs: ";
 
     public string textAfter = "";
     // Start is called before the first frame update
@@ -24,12 +28,28 @@ public class ScoreManager : MonoBehaviour
         
     }
 
+    public void Set_Text()
+    {
+        GameObject score_board = GameObject.FindWithTag("Score");
+        if (score_board != null) score_board.GetComponent<Text>().text = textScore + score.ToString() + "\n" + textBombs + bombs.ToString() + textAfter;
+    }
+
+    public bool Decrement_bombs()
+    {
+        if (bombs > 0)
+        {
+            bombs -= 1;
+            Set_Text();
+            return true;
+        }
+        return false;
+    }
+
     public void Increase_score(int score_inc)
     {
         score += score_inc;
 
-        GameObject score_board = GameObject.FindWithTag("Score");
-        score_board.GetComponent<Text>().text = textBefore + score.ToString() + textAfter;
+        Set_Text();
     }
 
     public void pellet_hit()
@@ -39,15 +59,13 @@ public class ScoreManager : MonoBehaviour
 
     public void SetTextBefore(string newtxt)
     {
-        textBefore = newtxt;
-        GameObject score_board = GameObject.FindWithTag("Score");
-        score_board.GetComponent<Text>().text = textBefore + score.ToString() + textAfter;
+        textScore = newtxt;
+        Set_Text();
     }
 
     public void SetTextAfter(string newtxt)
     {
         textAfter = newtxt;
-        GameObject score_board = GameObject.FindWithTag("Score");
-        score_board.GetComponent<Text>().text = textBefore + score.ToString() + textAfter;
+        Set_Text();
     }
 }

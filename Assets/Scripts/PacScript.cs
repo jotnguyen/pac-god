@@ -50,7 +50,11 @@ public class PacScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            Instantiate(BombPrefab, transform.position, Quaternion.identity);
+            if (FindObjectOfType<ScoreManager>() != null && FindObjectOfType<ScoreManager>().Decrement_bombs())
+            //if (FindObjectOfType<ScoreManager>().Decrement_bombs())
+            {
+                Instantiate(BombPrefab, transform.position, Quaternion.identity);
+            }
         }
         CollectedAll();
     }

@@ -19,8 +19,13 @@ public class TrackPlayerMove : MonoBehaviour
     {
         //if (!gameOver)
         //{
+        GameObject PlayerGO = GameObject.FindWithTag("Player");
+        if (PlayerGO != null)
+        {
             Transform Player = GameObject.FindWithTag("Player").transform;
             transform.position = Vector2.MoveTowards(transform.position, Player.position, MoveSpeed * Time.deltaTime);
+        }
+
         //}
     }
     void OnCollisionEnter2D(Collision2D collision)
