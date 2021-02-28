@@ -9,45 +9,38 @@ public class TimeController : MonoBehaviour
     private Vector3 setPosition;
     public bool isReversing = false;
     private bool reverseSet = false;
+    public GameObject pacWaypointPrefab;
+    private GameObject pacWaypoint;
     //public bool gameOver = false;
 
     void Start()
     {
-        //if (!gameOver)
-        //{
-            setPosition = GameObject.FindWithTag("Player").transform.position;
-        //}
-        //else
-       //{
-            setPosition = new Vector3(0f, 0f, 0f);
-        //}
+        setPosition = GameObject.FindWithTag("Player").transform.position;
+        pacWaypoint = new GameObject("New");
     }
 
     void Update()
     {
-        //if (!gameOver)
-        //{
-            GameObject player = GameObject.FindWithTag("Player");
-            if (Input.GetKey(KeyCode.R))
-            {
-                //Debug.Log("Reset Position");
-                setPosition = player.transform.position;
-            }
-            else if (Input.GetKey(KeyCode.E))
-            {
-                //Debug.Log("Set position");
-                player.transform.position = setPosition;
-            }
+        GameObject player = GameObject.FindWithTag("Player");
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Destroy(pacWaypoint);
+            setPosition = player.transform.position;
+            pacWaypoint = Instantiate(pacWaypointPrefab, player.transform.position, Quaternion.identity);
+        }
+        else if (Input.GetKey(KeyCode.E))
+        {
+            player.transform.position = setPosition;
+        }
 
-            if (Input.GetKey(KeyCode.Space))
-            {
-                isReversing = true;
-            }
-            else
-            {
-                isReversing = false;
-            }
-        //}
+        if (Input.GetKey(KeyCode.Space))
+        {
+            isReversing = true;
+        }
+        else
+        {
+            isReversing = false;
+        }
     }
     void Awake()
     {

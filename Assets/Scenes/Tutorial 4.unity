@@ -1477,6 +1477,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isReversing: 0
+  pacWaypointPrefab: {fileID: 8197711711834661369, guid: 8ea0916c24fc49d42a210e25484be2d4,
+    type: 3}
+  pacWaypoint: {fileID: 0}
 --- !u!4 &1911423699
 Transform:
   m_ObjectHideFlags: 0
