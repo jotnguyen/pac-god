@@ -13,6 +13,8 @@ public class TimeController : MonoBehaviour
     private GameObject pacWaypoint;
     //public bool gameOver = false;
 
+    public int blink_cost = 100;
+
     void Start()
     {
         setPosition = GameObject.FindWithTag("Player").transform.position;
@@ -28,14 +30,18 @@ public class TimeController : MonoBehaviour
             setPosition = player.transform.position;
             pacWaypoint = Instantiate(pacWaypointPrefab, player.transform.position, Quaternion.identity);
         }
-        else if (Input.GetKey(KeyCode.E))
+        else if (Input.GetKeyDown(KeyCode.E))
         {
-            player.transform.position = setPosition;
+            if (FindObjectOfType<ScoreManager>() != null && FindObjectOfType<ScoreManager>().Decrease_energy(blink_cost))
+                player.transform.position = setPosition;
         }
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            isReversing = true;
+            if (FindObjectOfType<ScoreManager>() != null && FindObjectOfType<ScoreManager>().Decrease_energy(blink_cost))
+
+                player.transform.position = newCurrentPosition;
+            //isReversing = true;
         }
         else
         {

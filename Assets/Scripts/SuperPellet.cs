@@ -24,6 +24,11 @@ public class SuperPellet : MonoBehaviour
             {
                 var moveGhost = ghost.GetComponent<MoveGhost>();
                 if (moveGhost) moveGhost.TurnEdible();
+                else
+                {
+                    var trackPlayerMove = ghost.GetComponent<TrackPlayerMove>();
+                    if (trackPlayerMove) trackPlayerMove.TurnEdible();
+                }
             }
             GameObject score_board = GameObject.FindWithTag("Score");
             if (score_board)

@@ -47,7 +47,18 @@ public class MoveGhost : MonoBehaviour
             {
                 Destroy(FindObjectOfType<TimeController>());
                 Destroy(collider.gameObject);
+                if (SceneManager.GetActiveScene().name.Contains("Sample"))
+                {
+                    GameObject old_score_board = GameObject.FindWithTag("Canvas");
+                    if (old_score_board != null)
+                    {
+                        Destroy(old_score_board);
+                    }
+                }
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+                GameObject score_board = GameObject.FindWithTag("Score");
+                if (score_board != null) score_board.GetComponent<ScoreManager>().Reset_score();
             }
             else
             {
