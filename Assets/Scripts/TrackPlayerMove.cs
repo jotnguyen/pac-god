@@ -132,6 +132,11 @@ public class TrackPlayerMove : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = EdibleSprite;
             Invoke("TurnInedible", 5);
         }
+        else
+        {
+            CancelInvoke("TurnInedible");
+            Invoke("TurnInedible", 5);
+        }
     }
 
     /*public void GameOver()

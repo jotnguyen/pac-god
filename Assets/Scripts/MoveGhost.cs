@@ -91,5 +91,16 @@ public class MoveGhost : MonoBehaviour
             Invoke("TurnInedible", 5);
             speed = edibleSpeed;
         }
+        else
+        {
+            CancelInvoke("TurnInedible");
+
+            // Just in case TurnInedible executes just before it is cancelled
+            edible = true;
+            GetComponent<SpriteRenderer>().sprite = EdibleSprite;
+            //
+
+            Invoke("TurnInedible", 5);
+        }
     }
 }
