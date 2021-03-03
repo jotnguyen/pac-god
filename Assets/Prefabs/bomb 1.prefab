@@ -97,6 +97,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeUntilExplosion: 1
-  ExplosionRadius: 1
+  ExplosionRadius: 0.3
   ExplosionPrefab: {fileID: 5086692162688136587, guid: f9d775a0ec64e54479111c6ba2fb9c6b,
     type: 3}
