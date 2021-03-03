@@ -914,9 +914,11 @@ MonoBehaviour:
 
     Teleport to point: E
 
+    Pause:
+    P
 
-    Eat
-    all the pellets to advnace
+
+    Eat all the pellets to advnace
 
     Super pellets let you eat ghosts
 
@@ -1588,6 +1590,7 @@ MonoBehaviour:
   num_pellets_collected: 0
   bombs: 3
   energy: 0
+  energy_cap: 200
   textScore: 'Score: '
   textBombs: 'Bombs: '
   textEnergy: 'Energy: '

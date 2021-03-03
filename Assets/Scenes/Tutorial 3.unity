@@ -1230,7 +1230,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'In some levels you may see rocks. You can destroy these by pressing Q
-    which will place a bomb. The bomb cannot damage Pac-God or ghost, it is only
+    which will place a bomb. The bomb cannot damage Pac-God or ghosts, it is only
     for destroying rocks. '
 --- !u!222 &898906772
 CanvasRenderer:
@@ -1360,6 +1360,7 @@ MonoBehaviour:
   num_pellets_collected: 0
   bombs: 3
   energy: 0
+  energy_cap: 200
   textScore: 'Score: '
   textBombs: 'Bombs: '
   textEnergy: 'Energy: '
