@@ -907,26 +907,25 @@ MonoBehaviour:
 
     Place Bomb: Q
 
-    Blink
-    back 2.5s: Space
-
-    Place teleport point: R
+    Place
+    teleport point: R
 
     Teleport to point: E
 
-    Pause:
-    P
+
+    Pause: P
 
 
-    Eat all the pellets to advnace
+    Eat all the
+    pellets to advnace
 
     Super pellets let you eat ghosts
 
-    Don''t
-    get hit
+    Don''t get hit
 
 
-    Good Luck  '
+    Good
+    Luck  '
 --- !u!222 &898906772
 CanvasRenderer:
   m_ObjectHideFlags: 0
