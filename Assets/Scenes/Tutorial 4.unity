@@ -1276,11 +1276,10 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Over time you generate energy.
 
-    Pac-God is able to travel back in
-    time 2.5 seconds by pressing Space. You can also set a teleport point by pressing
+    You can set a teleport point by pressing
     R and then teleport to it by pressing E.
 
-    Both of these cost 100 energy.'
+    Teleporting costs 100 energy.'
 --- !u!222 &898906772
 CanvasRenderer:
   m_ObjectHideFlags: 0

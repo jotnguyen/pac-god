@@ -35,14 +35,6 @@ public class TimeController : MonoBehaviour
             if (FindObjectOfType<ScoreManager>() != null && FindObjectOfType<ScoreManager>().Decrease_energy(blink_cost))
                 player.transform.position = setPosition;
         }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (FindObjectOfType<ScoreManager>() != null && FindObjectOfType<ScoreManager>().Decrease_energy(blink_cost))
-
-                player.transform.position = newCurrentPosition;
-            //isReversing = true;
-        }
         else
         {
             isReversing = false;
