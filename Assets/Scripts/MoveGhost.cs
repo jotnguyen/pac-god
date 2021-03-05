@@ -47,7 +47,7 @@ public class MoveGhost : MonoBehaviour
             {
                 Destroy(FindObjectOfType<TimeController>());
                 Destroy(collider.gameObject);
-                if (SceneManager.GetActiveScene().name.Contains("Sample"))
+                if (SceneManager.GetActiveScene().name.Contains("Level1"))
                 {
                     GameObject old_score_board = GameObject.FindWithTag("Canvas");
                     if (old_score_board != null)
