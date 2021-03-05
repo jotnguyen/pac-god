@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6379320325109929281}
   m_Layer: 0
   m_Name: PinkGhost
-  m_TagString: Untagged
+  m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6379320325109929290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.63, y: 3.53, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -98,6 +98,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   edible: 0
+  EdibleSprite: {fileID: 21300000, guid: 763eb59909093ad49a1c318d7c1a47f1, type: 3}
+  EnemySprite: {fileID: 21300000, guid: 50fbe3ac47d58724ba7943f5d13f73fe, type: 3}
 --- !u!58 &6379320325109929294
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -111,9 +113,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.009155977, y: -0.00945127}
   serializedVersion: 2
-  m_Radius: 0.49
+  m_Radius: 0.10667442
 --- !u!50 &6379320325109929281
 Rigidbody2D:
   serializedVersion: 4

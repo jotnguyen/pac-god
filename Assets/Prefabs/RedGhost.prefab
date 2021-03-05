@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 2326217334184913892}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 2326217334417629340}
   m_Father: {fileID: 0}
@@ -141,6 +141,8 @@ MonoBehaviour:
   EdibleSprite: {fileID: 21300000, guid: 763eb59909093ad49a1c318d7c1a47f1, type: 3}
   EnemySprite: {fileID: 21300000, guid: 516b05a572b66394b99322e7a397813e, type: 3}
   speed: 0.05
+  edibleSpeed: 0.04
+  enemySpeed: 0.06
 --- !u!58 &2326217334417629342
 CircleCollider2D:
   m_ObjectHideFlags: 0
