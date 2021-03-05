@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bomb_Item : MonoBehaviour
 {
+    //https://www.deviantart.com/firebro63/art/Bomberman-Sprites-Custom-291382338 (bomb sprite)
     // Start is called before the first frame update
     void Start()
     {

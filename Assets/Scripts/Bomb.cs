@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Bomb : MonoBehaviour
 {
-    //https://www.deviantart.com/firebro63/art/Bomberman-Sprites-Custom-291382338 (bomb sprite)
     public float TimeUntilExplosion;
     public float ExplosionRadius;
     public GameObject ExplosionPrefab;

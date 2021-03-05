@@ -905,27 +905,20 @@ MonoBehaviour:
 
     Movement: WASD or Arrow Keys
 
-    Place Bomb: Q
-
-    Place
-    teleport point: R
-
-    Teleport to point: E
-
 
     Pause: P
 
 
-    Eat all the
-    pellets to advnace
+    Eat all
+    the pellets to advnace
 
     Super pellets let you eat ghosts
 
-    Don''t get hit
+    Don''t get
+    hit
 
 
-    Good
-    Luck  '
+    Good Luck  '
 --- !u!222 &898906772
 CanvasRenderer:
   m_ObjectHideFlags: 0

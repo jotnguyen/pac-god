@@ -4939,12 +4939,12 @@ PrefabInstance:
     - target: {fileID: 2326217334417629340, guid: 31f83be7abfb4734cb3881afc9ec4359,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.9
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 2326217334417629340, guid: 31f83be7abfb4734cb3881afc9ec4359,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.9
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 2326217334417629340, guid: 31f83be7abfb4734cb3881afc9ec4359,
         type: 3}
@@ -7070,12 +7070,12 @@ PrefabInstance:
     - target: {fileID: 2326217334417629340, guid: 31f83be7abfb4734cb3881afc9ec4359,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.9
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 2326217334417629340, guid: 31f83be7abfb4734cb3881afc9ec4359,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.9
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 2326217334417629340, guid: 31f83be7abfb4734cb3881afc9ec4359,
         type: 3}
@@ -14625,7 +14625,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.34, y: 0.47}
+  m_Size: {x: 0.36, y: 0.36}
   m_EdgeRadius: 0
 --- !u!114 &1680233690
 MonoBehaviour:
@@ -17926,7 +17926,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.34, y: 0.47}
+  m_Size: {x: 0.36, y: 0.36}
   m_EdgeRadius: 0
 --- !u!114 &2082721065
 MonoBehaviour:
