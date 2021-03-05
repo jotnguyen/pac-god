@@ -11,6 +11,7 @@ TagManager:
   - Explosion
   - Wall
   - ShowOnPause
+  - Portal
   layers:
   - Default
   - TransparentFX
