@@ -33,7 +33,6 @@ public class PacScript : MonoBehaviour
         moveDir = new Vector2(0f, 0f);
         speed = 0.05f;
         worldSize = transform.lossyScale * 2f;
-        Screen.SetResolution(1280, 720, false);
         
         num_pellets = GetNumPellets();
         portalIsCreated = false;
