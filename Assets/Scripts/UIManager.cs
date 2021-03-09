@@ -46,9 +46,13 @@ public class UIManager : MonoBehaviour
     }
     public void Reload()
     {
-        if (SceneManager.GetActiveScene().name.Contains("Sample"))
+        GameObject old_score_board = GameObject.FindWithTag("Canvas");
+        if (old_score_board != null)
         {
-            GameObject old_score_board = GameObject.FindWithTag("Canvas");
+            old_score_board.GetComponentInChildren<ScoreManager>().SetTextAfter("");
+        }
+        if (SceneManager.GetActiveScene().name.Contains("Level1"))
+        {
             if (old_score_board != null)
             {
                 Destroy(old_score_board);
